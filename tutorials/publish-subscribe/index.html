@@ -82,6 +82,7 @@
 <p>To start using Ably you first need to install the NPM module. The NPM module can be installed as follows:</p>
 <pre lang="sh"><code lang="sh">npm install ably</code></pre>
 <p>The client library must be instanced with the API key you copied in Step 1. API keys used with <a href="/general/authentication#basic-authentication">basic authentication</a> for your own servers is generally preferred, however clients running on insecure devices should always use the <a href="/general/authentication#token-authentication">token authentication scheme</a> instead. In this example, we use an API key for simplicity.</p>
+<p>Add the following to a file named <code>example.js</code> to instance the Ably library inside your Node.js server:</p>
 <pre lang="nodejs"><code lang="nodejs">var Ably = require("ably");
 var realtime = new Ably.Realtime({ key: apiKey });</code></pre>
 <p><a href="https://github.com/ably/tutorials/commit/f8a9f4a">See this step in Github</a></p>
